@@ -7,7 +7,7 @@ const { exit } = require('process')
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 const args = require('minimist')(process.argv.slice(2))
 // Define allowed argument name 'port'.
-port = args['port']
+args['port']
 // Define a const `port` using the argument from the command line. 
 // Make this const default to port 3000 if there is no argument given for `--port`.
 const port = args['port'] || 3000
@@ -39,7 +39,7 @@ const server = http.createServer((req, res) => {
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
 server.listen()
-console.log('Server listening on port ${port}')
+console.log("Server listening on port ${port}")
 
 
 // That's it! You're all done!

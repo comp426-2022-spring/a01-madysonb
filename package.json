@@ -4,7 +4,8 @@
   "description": "Simple web server",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/comp426-2022-spring/a01-madysonb#readme",
   "dependencies": {
+    "browser-sync": "^2.27.7",
     "minimist": "^1.2.5"
   }
 }
